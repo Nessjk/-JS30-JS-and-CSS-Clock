@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js and CSS Clock</title>
+
+    <style>
+        body {
+            background: url(https://source.unsplash.com/random/800x800);
+            background-size: cover;
+        }
+        body:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+            opacity: .8; 
+        }
+        .clock {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .clock-face {
+            border: 20px solid white;
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            z-index: 99;
+            position: relative;
+        }
+
+        .hand {
+            background-color: black;
+            width: 50%;
+            height: 6px;
+            position: absolute;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>
